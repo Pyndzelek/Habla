@@ -1,0 +1,30 @@
+{
+  "slug": "saludos",
+  "title": "Hola, ¿qué tal?",
+  "description": "Greetings, asking how someone is, and the answers.",
+  "emoji": "👋",
+  "accent": "blue",
+  "unit": "A1 · Unidad 0",
+  "cards": [
+    { "id": "hola", "es": "¡Hola!", "pl": "Cześć!", "alt": { "pl": ["hej"] }, "example": { "es": "Hola, me llamo Anderson. ¿Y tú?", "pl": "Cześć, nazywam się Anderson. A ty?" } },
+    { "id": "buenos-dias", "es": "Buenos días", "pl": "Dzień dobry (rano)", "note": "Used until lunch — in Spain that's about 2 pm." },
+    { "id": "buenas-tardes", "es": "Buenas tardes", "pl": "Dzień dobry (po południu)", "note": "From lunch until it gets dark." },
+    { "id": "buenas-noches", "es": "Buenas noches", "pl": "Dobry wieczór / Dobranoc", "note": "Both a greeting in the evening and a goodbye before bed." },
+    { "id": "que-tal", "es": "¿Qué tal?", "pl": "Co słychać?", "example": { "es": "Hola, ¿qué tal?", "pl": "Cześć, co słychać?" } },
+    { "id": "como-estas", "es": "¿Cómo estás?", "pl": "Jak się masz?", "note": "Informal (tú). Uses estar, because it's about how you are right now." },
+    { "id": "como-esta", "es": "¿Cómo está (usted)?", "pl": "Jak się Pan / Pani ma?", "note": "Formal (usted) — for people you'd call Pan / Pani." },
+    { "id": "como-andas", "es": "¿Cómo andas?", "pl": "Jak leci?", "note": "Very informal, between friends.", "example": { "es": "¡Hombre, Paquito! ¿Cómo andas?", "pl": "O, Paquito! Jak leci?" } },
+    { "id": "y-tu", "es": "¿Y tú?", "pl": "A ty?" },
+    { "id": "estoy-bien", "es": "Estoy (muy) bien", "pl": "Mam się (bardzo) dobrze", "alt": { "es": ["bien", "muy bien"] } },
+    { "id": "estoy-mal", "es": "Estoy (muy) mal", "pl": "Mam się (bardzo) źle", "alt": { "es": ["mal", "muy mal"] } },
+    { "id": "estoy-regular", "es": "Estoy regular", "pl": "Tak sobie", "alt": { "es": ["regular", "así, así", "más o menos", "ni fu ni fa"] }, "note": "regular = así, así = más o menos = ni fu ni fa" },
+    { "id": "asi-asi", "es": "Así, así", "pl": "Jako tako", "alt": { "es": ["regular", "más o menos", "ni fu ni fa"] } },
+    { "id": "mas-o-menos", "es": "Más o menos", "pl": "Mniej więcej", "alt": { "es": ["regular", "así, así", "ni fu ni fa"] } },
+    { "id": "ni-fu-ni-fa", "es": "Ni fu ni fa", "pl": "Ani tak, ani siak", "alt": { "es": ["regular", "así, así", "más o menos"] }, "note": "Colloquial: neither good nor bad." },
+    { "id": "de-puta-madre", "es": "Estoy de puta madre", "pl": "Czuję się zajebiście", "note": "Vulgar slang (Spain). Fine among friends, never with your teacher or your boss." },
+    { "id": "senor", "es": "Buenos días, señor Martínez", "pl": "Dzień dobry, panie Martínez", "note": "señor = Mr / sir, señora = Mrs / madam, señorita = Miss." },
+    { "id": "hombre", "es": "¡Hombre!", "pl": "O, cześć! / No proszę!", "note": "A friendly exclamation of surprise when you bump into someone you know." },
+    { "id": "saludar", "es": "saludar", "pl": "witać się / pozdrawiać" },
+    { "id": "el-saludo", "es": "el saludo", "pl": "powitanie", "note": "saludar → el saludo" }
+  ]
+}

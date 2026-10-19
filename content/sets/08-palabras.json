@@ -1,0 +1,27 @@
+{
+  "slug": "palabras",
+  "title": "Palabras en español",
+  "description": "Words from street signs, plus the words that matter to you.",
+  "emoji": "🪧",
+  "accent": "purple",
+  "unit": "A1 · Unidad 1",
+  "cards": [
+    { "id": "cine", "es": "el cine", "pl": "kino" },
+    { "id": "taxi", "es": "el taxi", "pl": "taksówka" },
+    { "id": "calle", "es": "la calle", "pl": "ulica", "example": { "es": "Calle del Almendro", "pl": "ulica Migdałowa" } },
+    { "id": "escuela-de-esqui", "es": "la escuela de esquí", "pl": "szkoła narciarska" },
+    { "id": "banos", "es": "los baños", "pl": "toalety / łazienki", "note": "On signs: Baños or Servicios." },
+    { "id": "restaurante", "es": "el restaurante", "pl": "restauracja" },
+    { "id": "aeropuerto", "es": "el aeropuerto (internacional)", "pl": "lotnisko (międzynarodowe)" },
+    { "id": "museo", "es": "el museo (de arte)", "pl": "muzeum (sztuki)" },
+    { "id": "metro", "es": "el metro", "pl": "metro" },
+    { "id": "hotel", "es": "el hotel", "pl": "hotel", "note": "The h is silent: «otel»." },
+    { "id": "amor", "es": "el amor", "pl": "miłość" },
+    { "id": "casa", "es": "la casa", "pl": "dom" },
+    { "id": "familia", "es": "la familia", "pl": "rodzina" },
+    { "id": "amigos", "es": "los amigos", "pl": "przyjaciele", "note": "el amigo / la amiga" },
+    { "id": "amistad", "es": "la amistad", "pl": "przyjaźń" },
+    { "id": "viajes", "es": "los viajes", "pl": "podróże", "note": "el viaje = podróż" },
+    { "id": "significa", "es": "«Amigos» significa «friends».", "pl": "«Amigos» znaczy «przyjaciele»." }
+  ]
+}

@@ -84,8 +84,8 @@ function expandParens(phrase: string): string[] {
 export function answerVariants(expected: string, alts: string[] = []): string[] {
   const out = new Set<string>();
   for (const source of [expected, ...alts]) {
-    // whole string and each alternative separated by , ; or " / "
-    const pieces = [source, ...source.split(/\s*[;,]\s*|\s+\/\s+/)];
+    // whole string and each alternative separated by ; or " / " (commas belong to the phrase)
+    const pieces = [source, ...source.split(/\s*;\s*|\s+\/\s+/)];
     for (const piece of pieces) {
       for (const p of expandParens(piece)) {
         for (const v of expandSlashes(normalize(p))) if (v) out.add(v);

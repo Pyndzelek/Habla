@@ -1,0 +1,31 @@
+{
+  "slug": "numeros-0-20",
+  "title": "Números 0–20",
+  "description": "From cero to veinte — the base for everything else.",
+  "emoji": "🔢",
+  "accent": "green",
+  "unit": "A1 · Unidad 0–1",
+  "cards": [
+    { "id": "0", "es": "cero", "pl": "0 (zero)" },
+    { "id": "1", "es": "uno", "pl": "1 (jeden)", "note": "Before a masculine noun it shortens: un libro. Feminine: una mesa." },
+    { "id": "2", "es": "dos", "pl": "2 (dwa)" },
+    { "id": "3", "es": "tres", "pl": "3 (trzy)" },
+    { "id": "4", "es": "cuatro", "pl": "4 (cztery)" },
+    { "id": "5", "es": "cinco", "pl": "5 (pięć)" },
+    { "id": "6", "es": "seis", "pl": "6 (sześć)" },
+    { "id": "7", "es": "siete", "pl": "7 (siedem)" },
+    { "id": "8", "es": "ocho", "pl": "8 (osiem)" },
+    { "id": "9", "es": "nueve", "pl": "9 (dziewięć)" },
+    { "id": "10", "es": "diez", "pl": "10 (dziesięć)" },
+    { "id": "11", "es": "once", "pl": "11 (jedenaście)" },
+    { "id": "12", "es": "doce", "pl": "12 (dwanaście)" },
+    { "id": "13", "es": "trece", "pl": "13 (trzynaście)" },
+    { "id": "14", "es": "catorce", "pl": "14 (czternaście)" },
+    { "id": "15", "es": "quince", "pl": "15 (piętnaście)" },
+    { "id": "16", "es": "dieciséis", "pl": "16 (szesnaście)", "note": "From 16 to 19: dieci + number, written as one word. Only dieciséis has an accent." },
+    { "id": "17", "es": "diecisiete", "pl": "17 (siedemnaście)" },
+    { "id": "18", "es": "dieciocho", "pl": "18 (osiemnaście)" },
+    { "id": "19", "es": "diecinueve", "pl": "19 (dziewiętnaście)" },
+    { "id": "20", "es": "veinte", "pl": "20 (dwadzieścia)" }
+  ]
+}

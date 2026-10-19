@@ -1,0 +1,32 @@
+{
+  "slug": "expresiones",
+  "title": "Expresiones útiles",
+  "description": "Eleven ways to say «maybe», seasons, and handy phrases from class.",
+  "emoji": "💬",
+  "accent": "green",
+  "unit": "A1 · Apuntes de clase",
+  "cards": [
+    { "id": "tal-vez", "es": "tal vez", "pl": "może", "hint": { "pl": "dwa słowa" } },
+    { "id": "quiza", "es": "quizá(s)", "pl": "być może", "note": "Both quizá and quizás are correct." },
+    { "id": "acaso", "es": "acaso", "pl": "może (książkowo)", "note": "Rather literary or used in questions." },
+    { "id": "igual", "es": "igual", "pl": "może (potocznie)", "note": "Colloquial (Spain): Igual voy mañana = Maybe I'll go tomorrow. Also means «equal»." },
+    { "id": "lo-mismo", "es": "lo mismo", "pl": "to samo", "note": "Colloquially also «maybe»: lo mismo llueve." },
+    { "id": "es-posible", "es": "es posible", "pl": "to możliwe" },
+    { "id": "es-probable", "es": "es probable", "pl": "to prawdopodobne" },
+    { "id": "posiblemente", "es": "posiblemente", "pl": "możliwe / być może", "note": "-mente = Polish -nie / -o adverbs." },
+    { "id": "probablemente", "es": "probablemente", "pl": "prawdopodobnie" },
+    { "id": "puede-ser", "es": "puede ser", "pl": "może być / możliwe" },
+    { "id": "puede-que", "es": "puede que", "pl": "możliwe, że", "note": "Followed by the subjunctive (later!): puede que venga." },
+    { "id": "por-supuesto", "es": "por supuesto", "pl": "oczywiście" },
+    { "id": "echar-una-siesta", "es": "echar una siesta", "pl": "uciąć sobie drzemkę", "alt": { "es": ["dormir una siesta"] }, "note": "= dormir una siesta" },
+    { "id": "echar-un-vistazo", "es": "echar un vistazo", "pl": "rzucić okiem" },
+    { "id": "estaciones", "es": "las estaciones del año", "pl": "pory roku" },
+    { "id": "primavera", "es": "la primavera", "pl": "wiosna" },
+    { "id": "verano", "es": "el verano", "pl": "lato" },
+    { "id": "otono", "es": "el otoño", "pl": "jesień" },
+    { "id": "invierno", "es": "el invierno", "pl": "zima" },
+    { "id": "o-u", "es": "Tengo siete u ocho euros.", "pl": "Mam siedem lub osiem euro.", "note": "o (or) becomes u before a word starting with o- (u ocho, u otro)." },
+    { "id": "y-e", "es": "Soy seria e idealista.", "pl": "Jestem poważna i idealistyczna.", "note": "y (and) becomes e before a word starting with i- (e idealista, e inteligente)." },
+    { "id": "b-v", "es": "B = V", "pl": "b i v brzmią tak samo", "note": "In Spanish, b and v are pronounced the same: vaso and baso sound identical." }
+  ]
+}

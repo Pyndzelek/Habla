@@ -29,8 +29,9 @@ The user attaches materials (vocab lists, textbook pages, photos…); turn them 
      existing sets; fixing a typo in `es`/`pl` is fine. Use a short ASCII slug of the Spanish word.
    - Include the article for nouns (`el pan`, `la casa`) — the grader lets the user omit it but
      reminds them. Gender pairs: `alto/a`, `profesor/a`, `el/la estudiante` all expand automatically.
-   - Several meanings: separate with `, ` in the field or list extras in `alt`. `(się) uczyć` makes
-     the bracketed part optional.
+   - Several meanings: separate with ` / ` (or `; `) in the field, or list extras in `alt`. Commas are
+     part of the phrase (`¿Puedes repetir, por favor?`), never separators. `(się) uczyć` makes the
+     bracketed part optional. Irregular feminines need full forms: `francés / francesa`, `actor / actriz`.
    - If two cards share a translation (ser/estar → być), add a `hint` for that prompt language.
    - Correct accents/ñ/Polish diacritics in the source — missing accents are flagged to the user.
    - Aim for 15–35 cards per set; split bigger material into several sets.

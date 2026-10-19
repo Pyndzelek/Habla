@@ -1,0 +1,31 @@
+{
+  "slug": "despedidas",
+  "title": "Encantado y hasta luego",
+  "description": "Meeting people, politeness, and every way to say goodbye.",
+  "emoji": "🫡",
+  "accent": "purple",
+  "unit": "A1 · Unidad 0",
+  "cards": [
+    { "id": "encantado", "es": "Encantado/a", "pl": "Miło mi", "note": "A woman says encantada, a man says encantado." },
+    { "id": "mucho-gusto", "es": "Mucho gusto", "pl": "Bardzo mi miło", "note": "Same for everyone, no gender ending." },
+    { "id": "igualmente", "es": "Igualmente", "pl": "Wzajemnie / Mnie również", "example": { "es": "Encantada. — Igualmente.", "pl": "Miło mi. — Wzajemnie." } },
+    { "id": "gracias", "es": "Gracias", "pl": "Dziękuję", "alt": { "pl": ["dzięki"] } },
+    { "id": "de-nada", "es": "De nada", "pl": "Nie ma za co", "note": "The standard answer to gracias." },
+    { "id": "por-favor", "es": "Por favor", "pl": "Proszę", "hint": { "pl": "prosząc o coś" } },
+    { "id": "lo-siento", "es": "Lo siento", "pl": "Przepraszam / Przykro mi", "example": { "es": "Lo siento, no hablo japonés.", "pl": "Przepraszam, nie mówię po japońsku." } },
+    { "id": "hasta-pronto", "es": "¡Hasta pronto!", "pl": "Do zobaczenia wkrótce!" },
+    { "id": "hasta-luego", "es": "¡Hasta luego!", "pl": "Na razie!", "alt": { "pl": ["do później"] }, "note": "The most common everyday goodbye — even if you won't see them again today." },
+    { "id": "hasta-la-vista", "es": "¡Hasta la vista!", "pl": "Do zobaczenia!" },
+    { "id": "hasta-manana", "es": "¡Hasta mañana!", "pl": "Do jutra!" },
+    { "id": "hasta-el-lunes", "es": "¡Hasta el lunes!", "pl": "Do poniedziałku!", "note": "hasta + el + day of the week." },
+    { "id": "hasta-el-martes", "es": "¡Hasta el martes!", "pl": "Do wtorku!" },
+    { "id": "chao", "es": "¡Chao!", "pl": "Pa!", "alt": { "es": ["chau"] }, "note": "Also spelled chau (Latin America)." },
+    { "id": "adios", "es": "¡Adiós!", "pl": "Do widzenia! / Żegnaj!" },
+    { "id": "quien-es", "es": "¿Quién es?", "pl": "Kto to? / Kto mówi?", "example": { "es": "¿Con el señor Martínez Ortega, por favor? — Sí, ¿quién es?", "pl": "Czy mogę rozmawiać z panem Martínezem Ortegą? — Tak, kto mówi?" } },
+    { "id": "soy-yo", "es": "¡Soy yo!", "pl": "To ja!" },
+    { "id": "mi-amor", "es": "Mi amor", "pl": "Kochanie", "example": { "es": "Hola, mi amor.", "pl": "Cześć, kochanie." } },
+    { "id": "bienvenidos", "es": "¡Bienvenidos!", "pl": "Witajcie!", "note": "bienvenido to one man, bienvenida to one woman." },
+    { "id": "despedirse", "es": "despedirse", "pl": "żegnać się" },
+    { "id": "la-despedida", "es": "la despedida", "pl": "pożegnanie", "note": "despedirse → la despedida" }
+  ]
+}

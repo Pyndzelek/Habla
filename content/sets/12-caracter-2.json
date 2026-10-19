@@ -1,0 +1,30 @@
+{
+  "slug": "caracter-2",
+  "title": "¿Cómo eres? II",
+  "description": "-o / -a personality adjectives and describing yourself with ser.",
+  "emoji": "🧠",
+  "accent": "green",
+  "unit": "A1 · Unidad 1 · Carácter",
+  "cards": [
+    { "id": "extrovertido", "es": "extrovertido/a", "pl": "ekstrawertyczny", "note": "-o for him, -a for her: extrovertido, extrovertida." },
+    { "id": "generoso", "es": "generoso/a", "pl": "hojny" },
+    { "id": "impulsivo", "es": "impulsivo/a", "pl": "impulsywny" },
+    { "id": "religioso", "es": "religioso/a", "pl": "religijny" },
+    { "id": "reservado", "es": "reservado/a", "pl": "skryty / powściągliwy", "hint": { "pl": "nie tímido" } },
+    { "id": "romantico", "es": "romántico/a", "pl": "romantyczny" },
+    { "id": "serio", "es": "serio/a", "pl": "poważny" },
+    { "id": "sincero", "es": "sincero/a", "pl": "szczery" },
+    { "id": "timido", "es": "tímido/a", "pl": "nieśmiały" },
+    { "id": "nervioso", "es": "nervioso/a", "pl": "nerwowy", "note": "ser nervioso = a nervous person; estar nervioso = nervous right now." },
+    { "id": "simpatico", "es": "simpático/a", "pl": "sympatyczny / miły" },
+    { "id": "antipatico", "es": "antipático/a", "pl": "niesympatyczny / niemiły" },
+    { "id": "como-eres", "es": "¿Cómo eres?", "pl": "Jaki jesteś? / Jaka jesteś?", "note": "Character → ser." },
+    { "id": "eres-optimista", "es": "¿Eres optimista?", "pl": "Jesteś optymistą?" },
+    { "id": "un-poco", "es": "Soy un poco tímido.", "pl": "Jestem trochę nieśmiały." },
+    { "id": "muy", "es": "Soy muy flexible.", "pl": "Jestem bardzo elastyczny." },
+    { "id": "no-soy", "es": "No, no soy optimista. Soy pesimista.", "pl": "Nie, nie jestem optymistą. Jestem pesymistą." },
+    { "id": "ni", "es": "No soy elegante ni pesimista.", "pl": "Nie jestem ani elegancki, ani pesymistą.", "note": "no … ni … = neither … nor …" },
+    { "id": "soy-sincero", "es": "Yo soy sincero y realista.", "pl": "Jestem szczery i realistyczny." },
+    { "id": "y-e", "es": "Soy seria e idealista.", "pl": "Jestem poważna i idealistyczna.", "note": "y (and) becomes e before a word starting with an i- sound. «seria y idealista» is wrong." }
+  ]
+}

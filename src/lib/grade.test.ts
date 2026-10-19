@@ -42,11 +42,18 @@ test("articles", () => {
 
 test("alternatives", () => {
   assert.equal(v("hej", "cześć", { alts: ["hej"] }), "correct");
-  assert.equal(v("dobry wieczór", "dobry wieczór, dobranoc"), "correct");
-  assert.equal(v("dobranoc", "dobry wieczór, dobranoc"), "correct");
+  assert.equal(v("dobry wieczór", "dobry wieczór / dobranoc"), "correct");
+  assert.equal(v("dobranoc", "dobry wieczór; dobranoc"), "correct");
+  assert.equal(v("francesa", "francés / francesa"), "correct");
   assert.equal(v("alta", "alto/a"), "correct");
   assert.equal(v("profesora", "profesor/a"), "correct");
   assert.equal(v("la estudiante", "el/la estudiante"), "correct");
   assert.equal(v("uczyć", "(się) uczyć"), "correct");
   assert.equal(v("się uczyć", "(się) uczyć"), "correct");
+});
+
+test("commas are part of a phrase", () => {
+  assert.equal(v("puedes repetir por favor", "¿Puedes repetir, por favor?"), "correct");
+  assert.equal(v("por favor", "¿Puedes repetir, por favor?"), "wrong");
+  assert.equal(v("entiendo", "No, no entiendo."), "wrong");
 });
