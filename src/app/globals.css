@@ -167,8 +167,12 @@ body {
   }
 }
 
-/* Hide number spinners, nicer focus */
-input:focus-visible,
+/* Text fields draw their own rounded focus glow on the wrapper */
+input:focus,
+input:focus-visible {
+  outline: none;
+}
+
 button:focus-visible,
 a:focus-visible {
   outline: 3px solid color-mix(in srgb, var(--blue) 45%, transparent);

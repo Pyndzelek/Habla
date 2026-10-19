@@ -60,7 +60,7 @@ export function SetView({ set }: { set: StudySet }) {
       featured: true,
     },
     { href: `${base}/flashcards`, title: "Flashcards", detail: "Flip, swipe, sort", icon: <IconCards size={22} /> },
-    { href: `${base}/write`, title: "Write", detail: "Type every answer", icon: <IconKeyboard size={22} /> },
+    { href: `${base}/write`, title: "Write", detail: "Recall every word", icon: <IconKeyboard size={22} /> },
     { href: `${base}/match`, title: "Match", detail: "Race the clock", icon: <IconGrid size={22} /> },
   ];
 

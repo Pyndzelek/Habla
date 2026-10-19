@@ -23,12 +23,14 @@ import { Button, IconButton } from "../ui/Button";
 import { ProgressRing } from "../ui/controls";
 import { IconCheck, IconSpeaker } from "../ui/icons";
 import { ChoiceQuestion } from "./ChoiceQuestion";
+import { RevealQuestion } from "./RevealQuestion";
 import { ClientOnly, fitText, ResultScreen, StudyStage, StudyTopBar, useKeys } from "./StudyChrome";
 import { TypedQuestion, type Outcome } from "./TypedQuestion";
 
 export type Mode = "learn" | "write" | "review";
 
 type Level = 0 | 1 | 2;
+type Kind = "mc" | "type" | "reveal";
 
 const MODE_TITLE: Record<Mode, string> = { learn: "Learn", write: "Write", review: "Review" };
 
@@ -143,8 +145,14 @@ function Session({
 
   const current = queue[0];
 
-  const kind: "mc" | "type" =
-    mode === "learn" && current && levels[current.key] === 0 && settings.learnWithChoices ? "mc" : "type";
+  // Native-language (Polish) answers are self-graded flashcard style unless the user wants to type them.
+  const kind: Kind = !current
+    ? "type"
+    : mode === "learn" && levels[current.key] === 0 && settings.learnWithChoices
+      ? "mc"
+      : answerLang(current.dir) === "pl" && !settings.typePolish
+        ? "reveal"
+        : "type";
 
   const options = useMemo(() => {
     if (!current || kind !== "mc") return [];
@@ -170,7 +178,7 @@ function Session({
     const first = !tally.asked.includes(item.key);
 
     // Spaced repetition only learns from typed recall; recognition just counts as activity.
-    if (first && kind === "type") {
+    if (first && kind !== "mc") {
       recordReview(item.slug, item.card.id, item.dir, ratingFor(o.verdict, o.accepted));
     } else {
       recordActivity();
@@ -308,6 +316,8 @@ function Session({
               <div className="mt-6">
                 {kind === "mc" ? (
                   <ChoiceQuestion item={current} options={options} autoSpeak={settings.autoSpeak} onDone={onOutcome} />
+                ) : kind === "reveal" ? (
+                  <RevealQuestion item={current} onDone={onOutcome} />
                 ) : (
                   <TypedQuestion
                     item={current}
@@ -401,7 +411,7 @@ function Prompt({
   autoSpeak,
 }: {
   item: Item;
-  kind: "mc" | "type";
+  kind: Kind;
   level: Level;
   mode: Mode;
   autoSpeak: boolean;
@@ -433,8 +443,10 @@ function Prompt({
               New word
             </motion.span>
           )}
-          {mode === "learn" && level === 1 && kind === "type" && (
-            <span className="rounded-full bg-purple/12 px-2.5 py-1 text-xs font-semibold text-purple">Now type it</span>
+          {mode === "learn" && level === 1 && kind !== "mc" && (
+            <span className="rounded-full bg-purple/12 px-2.5 py-1 text-xs font-semibold text-purple">
+              {kind === "type" ? "Now type it" : "Now recall it"}
+            </span>
           )}
           {pl === "es" && (
             <IconButton label="Pronounce" onClick={() => speak(text, "es")}>

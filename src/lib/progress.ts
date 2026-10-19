@@ -21,6 +21,8 @@ export interface Settings {
   learnWithChoices: boolean;
   /** After a wrong typed answer, copy the correct one before moving on. */
   retypeMistakes: boolean;
+  /** Type Polish answers instead of revealing & self-grading them. */
+  typePolish: boolean;
   roundSize: number;
 }
 
@@ -45,6 +47,7 @@ export const DEFAULT_SETTINGS: Settings = {
   dailyGoal: 40,
   learnWithChoices: true,
   retypeMistakes: true,
+  typePolish: false,
   roundSize: 7,
 };
 

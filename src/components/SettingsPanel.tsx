@@ -117,6 +117,9 @@ export function SettingsPanel({ compact = false }: { compact?: boolean }) {
         <Row title="Retype mistakes" detail="Copy the right answer once — it sticks better.">
           <Toggle checked={s.retypeMistakes} onChange={(retypeMistakes) => updateSettings({ retypeMistakes })} />
         </Row>
+        <Row title="Type Polish answers" detail="Off: reveal the Polish and mark whether you knew it.">
+          <Toggle checked={s.typePolish} onChange={(typePolish) => updateSettings({ typePolish })} />
+        </Row>
         <Row title="Round size">
           <SegmentedControl
             size="sm"
