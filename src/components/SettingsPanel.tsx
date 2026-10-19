@@ -138,6 +138,21 @@ export function SettingsPanel({ compact = false }: { compact?: boolean }) {
 
       {!compact && (
         <>
+          <Group label="Appearance">
+            <div className="py-3.5">
+              <SegmentedControl
+                className="w-full"
+                value={s.theme}
+                options={[
+                  { value: "light", label: "☀️ Light" },
+                  { value: "dark", label: "🌙 Dark" },
+                  { value: "system", label: "Automatic" },
+                ]}
+                onChange={(theme) => updateSettings({ theme })}
+              />
+            </div>
+          </Group>
+
           <Group label="Daily goal">
             <Row title="Answers per day">
               <SegmentedControl

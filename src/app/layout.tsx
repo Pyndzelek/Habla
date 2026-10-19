@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import { AmbientBackground, AppShell } from "@/components/AppShell";
+import { THEME_BOOTSTRAP } from "@/lib/theme-script";
 import "./globals.css";
 
 const inter = Inter({
@@ -15,10 +16,7 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#f5f5f7" },
-    { media: "(prefers-color-scheme: dark)", color: "#000000" },
-  ],
+  themeColor: "#f5f5f7",
   width: "device-width",
   initialScale: 1,
   viewportFit: "cover",
@@ -26,8 +24,13 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" className={`${inter.variable} h-full antialiased`}>
+    <html lang="en" data-theme="light" className={`${inter.variable} h-full antialiased`} suppressHydrationWarning>
       <body className="min-h-full">
+        <script
+          type={typeof window === "undefined" ? "text/javascript" : "text/plain"}
+          suppressHydrationWarning
+          dangerouslySetInnerHTML={{ __html: THEME_BOOTSTRAP }}
+        />
         <AmbientBackground />
         <AppShell>{children}</AppShell>
       </body>

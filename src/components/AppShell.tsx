@@ -2,6 +2,7 @@
 
 import { MotionConfig } from "motion/react";
 import { createContext, useCallback, useContext, useState } from "react";
+import { useApplyTheme } from "@/lib/theme";
 import { SettingsPanel } from "./SettingsPanel";
 import { Sheet } from "./ui/Sheet";
 
@@ -15,6 +16,7 @@ export function AppShell({ children }: { children: React.ReactNode }) {
   const [state, setState] = useState<{ open: boolean; compact: boolean }>({ open: false, compact: false });
   const open = useCallback((compact = false) => setState({ open: true, compact }), []);
   const close = useCallback(() => setState((s) => ({ ...s, open: false })), []);
+  useApplyTheme();
 
   return (
     <MotionConfig reducedMotion="user">

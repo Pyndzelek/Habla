@@ -2,10 +2,14 @@
 
 import { useSyncExternalStore } from "react";
 import type { Strictness } from "./grade";
+import { STORAGE_KEY } from "./theme-script";
 import { newState, schedule, type CardState, type Rating } from "./srs";
 import type { Direction, DirectionSetting } from "./types";
 
+export type Theme = "light" | "dark" | "system";
+
 export interface Settings {
+  theme: Theme;
   direction: DirectionSetting;
   shuffle: boolean;
   starredOnly: boolean;
@@ -31,6 +35,7 @@ export interface ProgressState {
 }
 
 export const DEFAULT_SETTINGS: Settings = {
+  theme: "light",
   direction: "es-pl",
   shuffle: true,
   starredOnly: false,
@@ -43,7 +48,7 @@ export const DEFAULT_SETTINGS: Settings = {
   roundSize: 7,
 };
 
-const KEY = "habla:v1";
+const KEY = STORAGE_KEY;
 
 function empty(): ProgressState {
   return { version: 1, cards: {}, stars: {}, daily: {}, matchBest: {}, settings: { ...DEFAULT_SETTINGS } };
